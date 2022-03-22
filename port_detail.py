@@ -18,7 +18,6 @@ net_connect = ConnectHandler(**ssh)
 output = net_connect.send_command('show port detail')
 #print (output)
 
-
 parser = ttp(data=data_to_parse, template=ttp_template)
 parser.parse()
 
@@ -30,6 +29,7 @@ result = json.loads(results)
 #print(result[0][1]['Port_Number'])
 
 #print(len(result[0]))
+
 
 i = 0
 
